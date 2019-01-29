@@ -42,7 +42,7 @@ manager: craigg
   
 -   Resource Governor can manage OLTP workloads but these types of queries, which are typically very short in duration, are not always on the CPU long enough to apply bandwidth controls. This may skew in the statistics returned for CPU usage %.  
   
--   The ability to govern physical IO only applies to user operations and not system tasks. System tasks include write operations to the transaction log and Lazy Writer IO operations. The Resource Govenor applies primarily to user read operations because most write operations are typically performed by system tasks.  
+-   The ability to govern physical IO only applies to user operations and not system tasks. System tasks include write operations to the transaction log and Lazy Writer IO operations. The Resource Governor applies primarily to user read operations because most write operations are typically performed by system tasks.  
   
 -   You cannot set IO thresholds on the internal resource pool.  
   
